@@ -30,7 +30,7 @@ def play(songs)
   
   if songs.include?(selection)
     puts "Playing #{selection}"
-  elsif selection.to_i in (1..songs.length)
+  elsif selection.to_i in (1..songs.length).to_a
     puts "Playing #{songs[selection.to_i]}"
   else
     puts "Invalid input, please try again"
