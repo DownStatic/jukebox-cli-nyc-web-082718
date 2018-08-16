@@ -53,10 +53,11 @@ def run
       list(songs)
       elsif answer == "play"
       play(songs)
+      elsif answer == "exit"
+      exit_jukebox
+      break
     end
   end
-  exit_jukebox
-  break
 end
       
     
